@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: white;
+    background-image: url('quote-bg.png');
+    background-size: cover;
+    font-family: Montserrat , sans-serif;
+    color: black;
+    display: flex;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main{
+    /* background-color: pink; */
+    width: auto;
+    max-width: 900px;
+    padding: 20px;
+    /* border: 2px solid black; */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0,0.3);
+}
+
+.quote-box{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.fa-quote-left{
+    font-size: 4rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0.3rem rgba(121,121,121, 0.65);
+}
+
+button:hover{
+    filter: brightness(120%);
+}
+
+button:active{
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255,255,255, 0.65);
+}
+
+.twtr {
+    width: 4rem;
+}
+
+.author {
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+@media screen and (max-width : 1000px) {
+    .main {
+        margin: 10px;
+    }
+    .quote-box{
+        font-size: 2.2rem;
+    }
+}
